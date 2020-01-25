@@ -19,6 +19,10 @@ module.exports = {
       {
         name: 'Contact',
         link: '/contact'
+      },
+      {
+        name: 'Success',
+        link: '/success'
       }
     ]
   },
@@ -40,16 +44,6 @@ module.exports = {
         path: `${__dirname}/src/data`,
       }, 
     },
-    {
-      resolve: `gatsby-plugin-nprogress`,
-      options: {
-        // Setting a color is optional.
-        color: `tomato`,
-        // Disable the loading spinner.
-        showSpinner: true,
-        minimum: 0
-      },
-    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -61,7 +55,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/web-logo.svg`, // This path is relative to the root of the site.
       },
     },
     

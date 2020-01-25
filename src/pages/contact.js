@@ -18,7 +18,7 @@ const contactPage = () => (
       <div className="form-wrap">
         <Container>
           <h3>If you have made it this far, I'm sure you have something interesting to tell me! Complete the form below and will get in touch in no time.</h3>
-          <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+          <form name="contact" method="post" action="/success" data-netlify="true" data-netlify-honeypot="bot-field">
             <input type="hidden" name="bot-field" />
             <input type="hidden" name="form-name" value="contact" />
 
@@ -35,10 +35,7 @@ const contactPage = () => (
               <textarea name="message" id="message" rows="6" />
             </div>
             <div className="actions">
-             
-                <input type="submit" value="Send Message"  className="view-projects"/>
-            
-            
+              <input type="submit" value="Send Message"  className="view-projects"/>
             </div>
           </form>
         </Container> 
