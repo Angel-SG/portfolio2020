@@ -1,0 +1,197 @@
+.project-card {
+  box-shadow: -2px 9px 17px -1px rgba(0,0,0,.18);
+  // border-radius: 5px;
+  margin-bottom: 40px;
+  border: lightgray;
+  position: relative;
+  cursor: pointer;
+  transition: box-shadow 0.3s, filter 0.3s;
+
+  &:hover {
+    box-shadow: -2px 19px 25px -1px rgba(0,0,0,.18);
+    transition: 0.3s;
+    
+    .project-img-wrap {
+      > img {
+        filter: none;
+      }
+    }
+  }
+
+  .overlay-yellow {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0);
+  }
+
+  .project-img-wrap {
+    max-height: 300px;
+    min-height: 300px;
+    overflow: hidden;
+    position: relative;
+
+    > img {
+      width: 100%;
+      filter: grayscale(10);
+      transition: 0.3s;
+
+    }
+  }
+
+  .project-text-wrap {
+    padding: 8px 15px;
+    display: block;
+    // position: absolute;
+    // bottom: 0;
+    // width: 100%;
+    // padding-bottom: 8px;
+
+    > span {
+      > p {
+        font-size: 20px;
+        font-weight: 700;
+        color: #495C64;
+        position: relative;
+        z-index: 1; 
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.modal-img {
+  max-width: 800px;
+  width: 100%;
+}
+
+.styles_overlay__CLSq- {
+  background: rgba(0,0,0,0.90);
+}
+
+
+.contact-strip-wrap {
+  margin: 40px 0;
+}
+
+.project-container {
+  border: 2px solid lightgray;
+  border-radius: 3px;
+  margin: 40px 0;
+  padding: 20px 15px;
+
+  .project-title {
+    margin: 0 0 20px 0;
+    border-bottom: 2px solid #16AD11;
+    display: inline-flex;
+  }
+
+  .project-label {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .styles_closeButton__20ID4 {
+    cursor: pointer;
+  }
+
+  ul {
+    padding-left: 0;
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+   
+  .skills-container {
+    display: flex;
+    margin-bottom: 20px;
+    padding-left: 0;
+
+    .skill {
+      display: inline-block;
+      padding: 5px 10px;
+      margin: 5px;
+      background: lightgray;
+      border-radius: 5px;
+      transition: 0.3s;
+      border: 1px solid transparent;
+      font-size: 14px;
+  
+      &:hover {
+        border: 1px solid gray;
+      }
+    }
+  } 
+
+  .project-url {
+    font-size: 18px;
+    font-weight: 700;
+    color: #16AD11;
+  }
+  
+}
+
+.styles_modal__gNwvD {
+  width: 100%;
+}
+
+// Animated Arrow 
+
+.arrow-container {
+  height: 80px;
+  text-align: center;
+
+  .arrows {
+    width: 60px;
+    height: 72px;
+    bottom: 20px;
+  }
+  
+  .arrows path {
+    stroke: black;
+    fill: transparent;
+    stroke-width: 1px;	
+    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s infinite; 
+  }
+}
+
+
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {	
+	animation-delay:0s;
+	-webkit-animation-delay:0s; /* Safari 和 Chrome */
+}

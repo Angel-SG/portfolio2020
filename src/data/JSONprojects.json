@@ -1,0 +1,94 @@
+ 
+  {
+  "projects": [
+      {
+        "id": 1,
+        "title": "Fresh Food for Now",
+        "description": "My description 1",
+        "modalURL": "https://www.google.com",
+        "image": 
+          {
+            "src":  "../images/project-freshfood.png"
+          },
+        "tasks": [
+          "Front-end site build",
+          "Coding web components and make them editable for the end user",
+          "Site optimization",
+          "Cross-browser compatibility"
+        ],
+        "skills": [
+          "HTML",
+          "CSS",
+          "javaScript",
+          "React"
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Close Brothers Savings",
+        "description": "Front-end development for an online banking company to help them improve their online presence and to inform of the main products. Everything was translated from a sketch design. The website's build with reusable web components that also are editable for the final user. ",
+        "modalURL": "https://www.google.com",
+        "image": 
+          {
+            "src":  "../images/project-closesavings.png"
+          },
+        "tasks": [
+          "Front-end site build",
+          "Create editable components",
+          "Site optimization",
+          "Cross-browser compatibility"
+        ],
+        "skills": [
+          "HTML",
+          "CSS",
+          "javaScript",
+          "React"
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Novitas Loans",
+        "description": "My description 1",
+        "modalURL": "https://www.google.com",
+        "image": 
+          {
+            "src":  "../images/project-novitas.png"
+          },
+        "tasks": [
+          "Front-end site build",
+          "Create editable components",
+          "Site optimization",
+          "Cross-browser compatibility"
+        ],
+        "skills": [
+          "HTML",
+          "CSS",
+          "javaScript",
+          "React"
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Kambi",
+        "description": "My description 1",
+        "modalURL": "https://www.google.com",
+        "image": 
+          {
+            "src":  "../images/project-kambi.png"
+          },
+        "tasks": [
+          "Front-end site build",
+          "Create editable components",
+          "Site optimization",
+          "Cross-browser compatibility"
+        ],
+        "skills": [
+          "HTML",
+          "CSS",
+          "javaScript",
+          "React"
+        ]
+      }
+    ]
+  }     
+

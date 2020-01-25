@@ -1,0 +1,360 @@
+// @media screen and (min-width: 576px) {}
+// @media screen and (min-width: 768px) {}
+// @media screen and (min-width: 992px) {}
+// @media screen and (min-width: 1200px) {}
+
+
+html {
+  font-family: 'Nunito', sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  width: 100%;
+  height: 100%;
+}
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  
+}
+
+p {
+  font-size: 16px;
+  margin-top: 0;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
+}
+
+.layout-wrap {
+  min-height: calc(100vh - 54px);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+main {
+  flex-grow: 1;
+}
+
+header, main, footer {
+  flex-shrink: 0;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background: white;
+  border: 1px solid lightgray;
+  z-index: 10;
+}
+
+.hero-wrap {
+  position: relative;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 576px) {
+    margin-bottom: 40px;
+  }
+
+  .animated-bg {
+    background-image: url('../images/hero-code-home.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+    min-height: 15vh;
+    width: 3000px;
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  
+  //   animation-name: MOVE-BG;
+  //   animation-duration: 600s;
+  //   animation-timing-function: linear;
+  //   animation-iteration-count: infinite;
+  
+  //   @keyframes MOVE-BG {
+  //     from {
+  //       transform: translateX(0);
+  //     }
+  //     50% { 
+  //       transform: translateX(-50%);
+  //     }
+  //     100% {
+  //       transform: translateX(187%);
+  //     }
+  //  }
+  
+  }
+  
+}
+
+
+.intro-text-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  min-height: 15vh;
+  position: fixed;
+  h1 {
+    color: white;
+    font-size: 80px;
+    // margin-top: auto;
+    margin-bottom: 0;
+
+    @media screen and (min-width: 768px) {
+      font-size: 160px;
+      text-align: left;
+    }
+  
+  }
+
+  h3 {
+    color: white;
+    font-size: 40px;
+    // margin-top: auto;
+    margin-bottom: 0;
+
+    @media screen and (min-width: 768px) {
+      font-size: 80px;
+      text-align: left;
+    }
+  }
+}
+
+.gradient-overlay {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  margin: 0;
+  background: linear-gradient(180deg,transparent 45%,#0e0e0eb8);
+}
+
+.home-main-wrap {
+  h2 {
+    font-size: 24px;
+    font-weight: 700;
+  
+    @media screen and (min-width: 768px) {
+      font-size: 36px;
+      text-align: left;
+    }
+
+    &:after {
+      content: none;
+    }
+  }
+
+  h3 {
+    margin-bottom: 60px;
+    font-size: 18px;
+    
+    @media screen and (min-width: 768px) {
+      font-size: 20px;
+    }
+
+  }
+}
+
+.view-projects {
+  padding: 10px 50px;
+  color: white;
+  background: #16AD11;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: 0.3s;
+  border: 2px solid transparent;
+  display: inline-block;
+  text-align: center;
+  margin-right: 40px;
+  margin-bottom: 20px;
+
+  &:hover {
+    background: transparent;
+    border: 2px solid #16AD11;
+    color: #16AD11;
+  }
+
+}
+
+footer {
+  text-align: center;
+  padding: 15px 0;
+  border-top: 2px solid lightgrey;
+
+  i {
+    color: #16AD11;
+  }
+}
+
+.header-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  .logo-wrap {
+    a {
+      font-size: 18px;
+      display: inline-block;
+      padding: 15px 10px 5px;
+      font-weight: 500;
+    }
+  }
+
+  .nav-wrap {
+    margin-left: auto;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+
+    ul {
+      margin: 0;
+      li {
+        a {
+          text-decoration: none;
+          font-size: 16px;
+          font-weight: 700;
+          color: black;
+          padding-left: 50px;
+          &.active {
+            color: #16AD11;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-weight: 400;
+
+  &:after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    border-radius: 3px;
+    background-color: #16AD11;
+    position: relative;
+    top: 13px;
+    left: 0;
+  }
+
+  + p:last-of-type {
+    margin-bottom: 60px;
+  }
+}
+
+#layout-outer {
+  opacity: 0;
+  transition: 0.3s;
+
+  &.loaded {
+    opacity: 1;
+  }
+}
+
+
+.bm-item {
+  display: inline-block;
+
+  /* Our sidebar item styling */
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: #d1d1d1;
+  transition: color 0.2s;
+}
+
+/* Change color on hover */
+.bm-item:hover {
+  color: white;
+}
+
+/* The rest copied directly from react-burger-menu docs */
+
+
+ 
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  &:focus {
+    border: none;
+    border-color: transparent;
+  }
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.bm-burger-button {
+  left: initial;
+  right: 36px;
+  top: 15px;
+  position: fixed;
+  width: 30px;
+  height: 25px;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+
+.bm-item-list {
+  height: auto !important;
+
+  ul {
+    padding-left: 0;
+
+    a {
+      color: white;
+    }
+  }
+}
