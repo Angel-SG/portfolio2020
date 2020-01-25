@@ -13,6 +13,7 @@ import MobileMenu from '../components/mobileMenu'
 import Header from "./header"
 
 
+
 class Layout extends React.Component {
 
   constructor(props) {
@@ -50,8 +51,6 @@ class Layout extends React.Component {
 }
 
  
-
-
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }

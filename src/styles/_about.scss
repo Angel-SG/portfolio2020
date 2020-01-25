@@ -22,7 +22,7 @@
       border: 2px solid lightgray;
     }
   }
-  
+
   .social-container {
     margin-top: 40px;
     padding: 20px;
@@ -91,3 +91,23 @@
     }
   }
 }
+
+// .about-column {
+//   max-width: 100% !important;
+//   flex: 0 0 100% !important;
+
+//   @media screen and (min-width: 992px) {
+//     max-width: 33.3333% !important;
+//     flex: 0 0 33.3333% !important;
+//   }
+// }
+
+// .about-column-8 {
+//   max-width: 100% !important;
+//   flex: 0 0 100% !important;
+
+//   @media screen and (min-width: 992px) {
+//     flex: 0 0 66.6667% !important;
+//     max-width: 66.6667 !important;
+//   }
+// }

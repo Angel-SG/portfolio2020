@@ -10,7 +10,7 @@ import { Container, Row, Col } from 'react-grid-system';
 
 const aboutPage = () => (
   <Layout>
-    <SEO title="About" />
+    <SEO title="About" description="Welcome to my personal portfolio"/>
       <div className="hero-wrap">
         <div className="animated-bg"></div>
         <div className="gradient-overlay"></div>
@@ -20,7 +20,7 @@ const aboutPage = () => (
       </div>
       <Container className="about-wrap">
         <Row>
-          <Col md={12} lg={4}>
+          <Col sm={12} md={4}>
             <div className="profile-wrap">
               <img className="profile-image" src={profileImage} alt="profile" />
               <div className="social-container">
@@ -40,7 +40,7 @@ const aboutPage = () => (
               </div>
             </div>
           </Col>
-          <Col md={12} lg={8}>
+          <Col sm={12} md={8}>
             <div className="about-main-copy">
               <div className="copy-section">
                 <h2>About Me</h2>

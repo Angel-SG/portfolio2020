@@ -32,10 +32,14 @@ p {
 }
 
 .layout-wrap {
-  min-height: calc(100vh - 54px);
+  min-height: calc(100vh - 53.5px);
   display: flex;
   flex-direction: column;
   align-items: stretch;
+
+  @media screen and (min-width: 768px) {
+    min-height: calc(100vh - 53.5px);
+  }
 }
 
 main {
@@ -57,6 +61,7 @@ header {
 .hero-wrap {
   position: relative;
   margin-bottom: 20px;
+  overflow: hidden;
 
   @media screen and (min-width: 576px) {
     margin-bottom: 40px;
