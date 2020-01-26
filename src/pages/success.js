@@ -18,7 +18,7 @@ const Success = () => (
       </div>
       <Container className="about-wrap">
         <Row>
-          <Col md={12} lg={6}>
+          <Col sm={12} md={12} lg={6}>
              <h2>Thanks for getting in touch. I will answer your query very soon!</h2>
              <Link to="/" className="view-projects" style={{ display:'inline-block', marginRight: '0', marginTop: '80px' }}>Back to Home</Link>
           </Col>

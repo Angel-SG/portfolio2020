@@ -10,7 +10,7 @@ import { Container, Row, Col } from 'react-grid-system';
 
 const aboutPage = () => (
   <Layout>
-    <SEO title="About" description="Welcome to my personal portfolio"/>
+    <SEO title="About"/>
       <div className="hero-wrap">
         <div className="animated-bg"></div>
         <div className="gradient-overlay"></div>
