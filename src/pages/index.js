@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Container, Row, Col } from 'react-grid-system';
-import Typing from 'react-typing-animation';
+// import Typing from 'react-typing-animation';
 // import '../styles/app.scss'
 
 class IndexPage extends React.Component {
@@ -33,16 +33,16 @@ class IndexPage extends React.Component {
           <Container className="home-main-wrap">
             <Row>
               <Col md={12} sm={12}>
-                <Typing speed={30} delay={0} onFinishedTyping={() => {this.renderButton()}}>
+                {/* <Typing speed={30} delay={0} onFinishedTyping={() => {this.renderButton()}}> */}
                   <span>
                     <h2>I'm Angel, a passionate Front-end Developer who can interpret customer requirements, provide solutions and get things done. </h2>
                   </span>
                   <span>
                   <h3>Are you looking for someone to help with your projects? You landed in the perfect site! <span role="img" aria-label="emoji">&#128522;</span></h3>
-                  <Typing.Delay ms={1000} />
+                  {/* <Typing.Delay ms={1000} /> */}
                   {this.renderButton()}
                   </span>
-                </Typing>
+                {/* </Typing> */}
               </Col>
             </Row>
           </Container>
