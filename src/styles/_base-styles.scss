@@ -3,6 +3,20 @@
 // @media screen and (min-width: 992px) {}
 // @media screen and (min-width: 1200px) {}
 
+/* nunito-regular - latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/nunito-v12-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Nunito Regular'), local('Nunito-Regular'),
+       url('../fonts/nunito-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/nunito-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/nunito-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/nunito-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/nunito-v12-latin-regular.svg#Nunito') format('svg'); /* Legacy iOS */
+}
+
 
 html {
   font-family: 'Nunito', sans-serif;
@@ -197,6 +211,7 @@ footer {
   text-align: center;
   padding: 15px 0;
   border-top: 2px solid lightgrey;
+  background-color: white;
 
   i {
     color: #16AD11;

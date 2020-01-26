@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `AngelSG`,
-    description: `Personal portfolio`,
-    author: `AngelSG`,
+    description: `A passionate Front-end Developer who can interpret customer requirements, provide solutions and get things done.`,
+    author: `AngelSG | Front-end Web Developer`,
     menuLinks: [
       {
         name: 'Home',
@@ -52,8 +52,8 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#FFFFFF`,
+        theme_color: `#FFFFFF`,
         display: `minimal-ui`,
         icon: `src/images/web-logo.svg`, // This path is relative to the root of the site.
       },

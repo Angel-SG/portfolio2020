@@ -16,11 +16,6 @@ import Header from "./header"
 
 class Layout extends React.Component {
 
-  constructor(props) {
-    super(props);
-    
-  }
-
   render() {
 
     const { children, data } = this.props;
@@ -29,10 +24,6 @@ class Layout extends React.Component {
 
     return (
       <>
-        <Helmet>
-          <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet"/>
-          <script src="https://kit.fontawesome.com/f20ca191de.js" rel="preconnect" crossorigin="anonymous"></script>
-        </Helmet>
   
         <MobileMenu menuLinks={data.nodes[0].siteMetadata.menuLinks} />
         <Header siteTitle={data.nodes[0].siteMetadata.title} menuLinks={data.nodes[0].siteMetadata.menuLinks}/>

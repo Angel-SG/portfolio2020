@@ -2,9 +2,32 @@
   {
   "projects": [
       {
+        "id": 0,
+        "title": "The Eventa Group",
+        "description": "Brochure site development with Gatsby JS and Contentful Headless CMS.",
+        "modalURL": "http://www.theeventagroup.com/",
+        "image": 
+          {
+            "src":  "../images/project-theeventagroup.png"
+          },
+        "tasks": [
+          "Front-end site build",
+          "Headless CMS integration",
+          "Site optimization",
+          "Cross-browser compatibility"
+        ],
+        "skills": [
+          "HTML",
+          "SCSS",
+          "Gatsby JS",
+          "React JS",
+          "Contentful CMS"
+        ]
+      },
+      {
         "id": 1,
         "title": "Fresh Food for Now",
-        "description": "My description 1",
+        "description": "Web development for a recognized food brand in the UK that needed to create market awareness of their new delivery system and products.",
         "modalURL": "https://www.google.com",
         "image": 
           {
@@ -12,15 +35,15 @@
           },
         "tasks": [
           "Front-end site build",
-          "Coding web components and make them editable for the end user",
+          "Animated sticky navigation",
           "Site optimization",
           "Cross-browser compatibility"
         ],
         "skills": [
           "HTML",
           "CSS",
-          "javaScript",
-          "React"
+          "jQuery",
+          "Drupal DX8"
         ]
       },
       {
@@ -42,13 +65,13 @@
           "HTML",
           "CSS",
           "javaScript",
-          "React"
+          "Drupal DX8"
         ]
       },
       {
         "id": 3,
         "title": "Novitas Loans",
-        "description": "My description 1",
+        "description": "Web site built for a recognized loans provider in the UK. ",
         "modalURL": "https://www.google.com",
         "image": 
           {
@@ -63,30 +86,29 @@
         "skills": [
           "HTML",
           "CSS",
-          "javaScript",
-          "React"
+          "javaScript"
         ]
       },
       {
         "id": 4,
         "title": "Kambi",
-        "description": "My description 1",
+        "description": "Landing page built to inform clients about the company's offering. SVG and CSS transitions and animations where applied through the page to keep the user's attention thoroughly.",
         "modalURL": "https://www.google.com",
         "image": 
           {
             "src":  "../images/project-kambi.png"
           },
         "tasks": [
-          "Front-end site build",
-          "Create editable components",
-          "Site optimization",
+          "Front-end landing page build",
+          "SVG animation",
+          "CSS animation",
           "Cross-browser compatibility"
         ],
         "skills": [
           "HTML",
           "CSS",
           "javaScript",
-          "React"
+          "Drupal DX8"
         ]
       }
     ]
