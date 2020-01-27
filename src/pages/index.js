@@ -38,7 +38,7 @@ class IndexPage extends React.Component {
                     <h2>I'm Angel, a passionate Front-end Developer who can interpret customer requirements, provide solutions and get things done. </h2>
                   </span>
                   <span>
-                  <h3>Are you looking for someone to help with your projects? You landed in the perfect site! <span role="img" aria-label="emoji">&#128522;</span></h3>
+                  <h3>Are you looking for someone to help with your projects? You landed on the perfect site! <span role="img" aria-label="emoji">&#128522;</span></h3>
                   {/* <Typing.Delay ms={1000} /> */}
                   {this.renderButton()}
                   </span>

@@ -20,7 +20,7 @@ const projectsPage = () => (
     <Container className="home-main-wrap">
       <Row>
         <Col md={12} sm={12}>
-          <h3>In here some examples of projects that I've contributed as a Front-end Developer. In the last few years I have worked within digital agencies and in-house teams alike.</h3>
+          <h3>Below you can find examples of some of the projects that I've contributed as a Front-end Developer:</h3>
           <ProjectsList/>
         </Col>
       </Row>
@@ -28,8 +28,9 @@ const projectsPage = () => (
     <Container className="contact-strip-wrap">
       <Row>
         <Col md={12} sm={12}>
-          <h3>I hope you liked my work! Would you like to discuss the requirements of your next project? perhaps,   a site project you need some help with? just get in touch!</h3>
-          <Link to="/contact" className="view-projects">Get in touch!</Link>
+          <h3>Would you like to discuss the requirements for your next project? Just get in touch to find out how I can help. 
+</h3>
+          <Link to="/contact" className="view-projects">Get in touch</Link>
         </Col>
       </Row>
     </Container>
