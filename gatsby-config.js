@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `AngelSG`,
-    description: `A passionate Front-end Developer who can interpret customer requirements, provide solutions and get things done.`,
+    description: `Front-end Developer based in Brighton. Modern Front-end Development and Responsive Desing, Website performance and optimisation, HTML emails, React UI's.`,
     author: `AngelSG | Front-end Web Developer`,
+    siteUrl: `https://www.angel-sg.com`,
     menuLinks: [
       {
         name: 'Home',
@@ -31,6 +32,12 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-transformer-json`,
     {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://www.angel-sg.com`,
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
@@ -51,6 +58,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
