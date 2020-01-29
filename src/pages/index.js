@@ -22,7 +22,7 @@ class IndexPage extends React.Component {
     return (
       <div>
         <Layout>
-        <SEO title="Home" />
+        <SEO title="Angel Sanchez | Front-end Developer" />
         <div className="hero-wrap">
           <div className="animated-bg"></div>
           <div className="gradient-overlay"></div>
@@ -31,7 +31,7 @@ class IndexPage extends React.Component {
           </Container>
           </div>
           <Container className="home-main-wrap">
-            <Row>
+            <Row align="stretch" style={{ height: '100%' }}>
               <Col md={12} sm={12}>
                 {/* <Typing speed={30} delay={0} onFinishedTyping={() => {this.renderButton()}}> */}
                   <span>

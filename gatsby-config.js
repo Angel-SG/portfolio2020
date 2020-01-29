@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `AngelSG`,
+    title: `Angel Sanchez - Front-end Web Developer.`,
     description: `Front-end Developer based in Brighton. Modern Front-end Development and Responsive Desing, Website performance and optimisation, HTML emails, React UI's.`,
-    author: `AngelSG | Front-end Web Developer`,
+    author: `Angel Sanchez | Front-end Web Developer`,
     siteUrl: `https://www.angel-sg.com`,
     menuLinks: [
       {
