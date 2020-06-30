@@ -2,20 +2,18 @@ import React from "react"
 
 import { Container, Row, Col } from 'react-grid-system'
 import { Link } from 'gatsby'
+import Banner from "../components/banner";
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const Success = () => (
   <Layout>
+    
     <SEO title="About" />
-      <div className="hero-wrap">
-        <div className="animated-bg"></div>
-        <div className="gradient-overlay"></div>
-        <Container className="intro-text-container">
-          <span><h1>Cheers!</h1></span>
-        </Container>
-      </div>
+
+      <Banner title="Cheers" />
+
       <Container className="about-wrap">
         <Row>
           <Col>
@@ -24,6 +22,7 @@ const Success = () => (
           </Col>
         </Row>
       </Container>
+
   </Layout>
 )
 

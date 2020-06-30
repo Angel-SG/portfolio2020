@@ -1,47 +1,43 @@
-import React from "react"
+import React, { useState } from "react"
 import { StaticQuery, graphql } from 'gatsby'
 import { Container, Row, Col } from 'react-grid-system'
 import Modal from 'react-responsive-modal'
 
 
 
-class ProjectsList extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = { 
-      open: false,
-      modalImage: '',
-      modalTitle: '',
-      modalSkills: [],
-      modalTasks: [],
-      modalURL: '',
-      modalDescription: '',
-      ...props
-    }
-  }
- ;
-  onOpenModal = (image, title, skills, tasks, url, description) => {
-    this.setState({ open: true, modalImage: image, modalTitle: title, modalSkills: skills, modalTasks: tasks, modalURL: url, modalDescription: description });
+const ProjectsList = ({ props, projects }) => {
+ 
+  const [modal, setModal] = useState({
+    open: false,
+    modalImage: '',
+    modalTitle: '',
+    modalSkills: [],
+    modalTasks: [],
+    modalURL: '',
+    modalDescription: '',
+    ...props
+  });
+
+  const onOpenModal = (image, title, skills, tasks, url, description) => {
+    setModal({ open: true, modalImage: image, modalTitle: title, modalSkills: skills, modalTasks: tasks, modalURL: url, modalDescription: description });
   };
  
-  onCloseModal = () => {
-    this.setState({ open: false });
+  const onCloseModal = () => {
+    setModal({ open: false, modalImage: '', modalTitle: '', modalSkills: [], modalTasks: [], modalURL: '', modalDescription: '', });
   };
 
-  render() {
+  const { open, modalImage, modalTitle, modalSkills, modalTasks, modalURL, modalDescription } = modal;
 
-    const projects = this.props;
-    const { open, modalImage, modalTitle, modalSkills, modalTasks, modalURL, modalDescription } = this.state;
-   
+    
     return(
       <div>
         <Row>
-          {projects.projects.map(item =>(
+          {projects.map(item =>(
       
             <Col md={6} key={item.id}>
               <div className="project-card">
                 <div className="project-img-wrap">
-                <img src={item.image.src.publicURL} alt="projectss" onClick={() => this.onOpenModal(item.image.src.publicURL, item.title, item.skills, item.tasks, item.modalURL, item.description )} />
+                <img src={item.image.src.publicURL} alt="projectss" onClick={() => onOpenModal(item.image.src.publicURL, item.title, item.skills, item.tasks, item.modalURL, item.description )} />
                 </div>
                 <div className="project-text-wrap">
                 <span className="project-title"><p>{item.title}</p></span>
@@ -50,7 +46,7 @@ class ProjectsList extends React.Component {
             </Col>
           ))}
         </Row>
-        <Modal open={open} onClose={() => this.onCloseModal()} center>
+        <Modal open={open} onClose={() => onCloseModal()} center>
           <div>
             <Container className="project-container"> 
               <h3 className="project-title">{modalTitle}</h3>
@@ -88,8 +84,7 @@ class ProjectsList extends React.Component {
           </div>
         </Modal>
       </div>
-    );
-  }
+    )
 }
 
 
