@@ -34,13 +34,13 @@ const ProjectsList = ({ props, projects }) => {
         <Row>
           {projects.map(item =>(
       
-            <Col md={6} key={item.id}>
+            <Col md={4} key={item.id}>
               <div className="project-card">
-                <div className="project-img-wrap">
-                <img src={item.image.src.publicURL} alt="projectss" onClick={() => onOpenModal(item.image.src.publicURL, item.title, item.skills, item.tasks, item.modalURL, item.description )} />
-                </div>
+                <button className="project-img-wrap" onClick={() => onOpenModal(item.image.src.publicURL, item.title, item.skills, item.tasks, item.modalURL, item.description )}>
+                  <img src={item.image.src.publicURL} alt="projectss" />
+                </button>
                 <div className="project-text-wrap">
-                <span className="project-title"><p>{item.title}</p></span>
+                  <span className="project-title"><p>{item.title}</p></span>
                 </div>
               </div>
             </Col>

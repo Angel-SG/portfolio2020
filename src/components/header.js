@@ -36,6 +36,13 @@ const Header = ({ siteTitle, menuLinks }) => (
                 ))}
               </ul>
             </nav>
+            <div className="social-container">
+              <ul>
+                <li><a href="https://github.com/Angel-SG" target="_blank" rel="noopener noreferrer" title="github"><i className="fab fa-github-alt"></i></a></li>
+                {/* <li><a href="www.google.com" target="_blank" title="codepen"><i className="fab fa-codepen"></i></a></li> */}
+                <li><a href="https://www.linkedin.com/in/angel-sg/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i className="fab fa-linkedin"></i></a></li>
+              </ul>
+            </div>
           </div>
     </Container>
   </header>
