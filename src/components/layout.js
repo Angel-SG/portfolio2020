@@ -19,8 +19,6 @@ class Layout extends React.Component {
 
     const { children, data } = this.props;
 
-    console.log(data.nodes[0].siteMetadata.title);
-
     return (
       <>
   
