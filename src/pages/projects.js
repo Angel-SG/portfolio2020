@@ -26,7 +26,7 @@ const ProjectsPage = () => {
       <Container className={`home-main-wrap content-container ${addClass}`} ref={mainDiv}>
         <Row>
           <Col md={12} sm={12}>
-            <h3>Below you can find examples of some of the projects that I've contributed as a Front-end Developer:</h3>
+            {/* <p>Below you can find examples of some of the projects that I've contributed as a Front-end Developer:</p> */}
             <ProjectsList/>
           </Col>
         </Row>
@@ -34,8 +34,8 @@ const ProjectsPage = () => {
       <Container className="contact-strip-wrap">
         <Row>
           <Col md={12} sm={12}>
-            <h3>Would you like to discuss the requirements for your next project? Just get in touch to find out how I can help. 
-            </h3>
+            <p>Would you like to discuss the requirements for your next project? Just get in touch to find out how I can help. 
+            </p>
             <Link to="/contact" className="view-projects">Get in touch</Link>
           </Col>
         </Row>
