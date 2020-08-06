@@ -24,7 +24,12 @@ module.exports = {
       {
         name: 'Success',
         link: '/success'
+      },
+      {
+        name: 'Blog',
+        link: '/blog'
       }
+
     ]
   },
   plugins: [
@@ -56,6 +61,17 @@ module.exports = {
       options: {
         trackingId: "UA-136792428-1",
       },
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `dwd5irs8aekj`,
+        accessToken: `HrnSzDJ2x0jba0WgDgF126Wp9_4o4-qRjdAGZVKYsIc`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-create-client-paths`,
+      options: { prefixes: [`/blog-post/*`] },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sitemap`,

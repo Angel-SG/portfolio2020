@@ -11,19 +11,18 @@ const IndexPage = () => {
 
   const mainDiv = useRef();
 
-  const [addClass, setAddClass] = useState(''); 
+  const [addClass, setAddClass] = useState('');
 
   useEffect(() => {
     setAddClass('loaded')
   }, []);
 
-  
   return (
     <div>
       <Layout>
-        <SEO title="Angel Sanchez | Front-end Developer"/>
+        <SEO title="Angel Sanchez | Front-end Developer" />
 
-        <Banner title="Hello!"/>
+        <Banner title="Hello!" />
 
         <Container className={`home-main-wrap content-container ${addClass}`} ref={mainDiv}>
           <Row align="stretch" style={{ height: '100%' }}>
@@ -41,10 +40,9 @@ const IndexPage = () => {
         </Container>
 
       </Layout>
-    </div>  
+    </div>
   )
 
 }
 
 export default IndexPage
- 
