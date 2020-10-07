@@ -21,6 +21,7 @@ exports.createPages = async ({ graphql, actions }) => {
                   skills
                   tasks
                   title
+                  slug
                 }
               }
         }
@@ -42,12 +43,12 @@ exports.createPages = async ({ graphql, actions }) => {
 
     projectsArray.map( project => {
         createPage({
-          path: `/projects/${project.id}`,
+          path: `/projects/${project.slug}`,
           component: path.resolve(`./src/templates/project-page.js`),
           context: {
             // Data passed to context is available
             // in page queries as GraphQL variables.
-            slug: project.title,
+            slug: project.slug,
             id: project.id,
             description: project.description,
             image: project.image.src.publicURL,

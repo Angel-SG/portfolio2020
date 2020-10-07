@@ -1,0 +1,41 @@
+.reviews-wrap {
+    margin-bottom: 80px;
+
+    .slider-wrap {
+
+        .slick-prev:before, .slick-next:before  {
+            color: #28B3EA;
+            font-style: 25px;
+        }
+
+        .slide-wrap {
+            margin-bottom: 80px;
+            > img {
+                margin: 0 auto;
+            }
+            
+            .review-body {
+                font-style: italic;
+                margin-bottom: 30px;
+                padding: 10px 30px 30px 30px;
+                margin-top: 0;
+                position: relative;
+                text-align: center;
+                color: grey;
+            }
+
+            .review-name {
+                text-align: center;
+                font-weight: 600;
+                margin-bottom: 5px;
+                color: grey;
+            }
+
+            .review-title {
+                text-align: center;
+                color: grey;
+            }
+
+        }
+    }
+}

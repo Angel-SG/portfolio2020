@@ -30,10 +30,10 @@
             text-decoration: none;
             font-size: 16px;
             font-weight: 700;
-            color: black;
+            color: grey;
             padding-left: 50px;
             &.active {
-              color: #16AD11;
+              color: #28B3EA;
               text-decoration: underline;
             }
           }
@@ -56,11 +56,11 @@
                 i {
                   text-align: center;
                   font-size: 22px;
-                  color: #666666;
+                  color: #28B3EA;
                   transition: 0.3s;
       
                   &:hover {
-                    color: #16AD11;
+                    color: grey;
                   }
                 }
               }

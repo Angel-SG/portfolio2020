@@ -14,7 +14,7 @@ const ProjectsList = ({ props, projects }) => {
       
             <Col md={4} key={item.id}>
               <div className="project-card">
-                <Link to={`/projects/${item.id}`} className="project-img-wrap">
+                <Link to={`/projects/${item.slug}`} className="project-img-wrap">
                   <img src={item.image.src.publicURL} alt="projectss" />
                 </Link>
                 <div className="project-text-wrap">
@@ -42,6 +42,7 @@ export default props => (
             tasks
             modalURL
             description
+            slug
             image {
               src {
                 publicURL

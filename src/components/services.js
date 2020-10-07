@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-grid-system';
-import developmentImg from '../images/icons/programming.svg';
+import developmentImg from '../images/icons/web-programming.svg';
 import cmsImg from '../images/icons/database.svg';
 import optimizationImg from '../images/icons/optimization.svg';
 import browserImg from '../images/icons/browser.svg';

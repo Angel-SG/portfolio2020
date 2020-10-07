@@ -1,20 +1,26 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-grid-system';
-import { StaticQuery, graphql, Link } from 'gatsby'
+import { StaticQuery, graphql, Link } from 'gatsby';
+
+import Slider from 'react-slick';
+import quoteIcon from '../images/icons/left-quotes-sign.svg'
+import quoteIconReverse from '../images/icons/left-quotes-sign-reverse.svg'
 
 
-const Reviews = ({ reviews, props }) => {
 
-    
-    
-    console.log(reviews[1].reviews);
+
+const Reviews = ({ reviews }) => {
 
     return(
-        <div>
+        <div className="reviews-wrap">
             <h1>What my clients say</h1>
-            {/* {reviews[1].reviews.map(item => {
-                return <div>{item.description}</div>
-            })} */}
+            <SlickSlider reviews={reviews}/>
+            <h1>Communication is the key in every successful project.</h1>
+            <p>Don't hesitate to get in touch if you have an idea in mind, a project that needs some help or simply some bugs to fix. I'm currently available for freelance and contact work.</p>
+             <div>
+                <Link to="/projects" className="view-projects">View my Work</Link>
+                <Link to="/about" className="view-projects">More about me</Link>
+              </div>
         </div>
     )
 }
@@ -38,3 +44,56 @@ export default props => (
     render={({ allDataJson }) => <Reviews reviews={allDataJson.nodes} {...props} />}
   />
 )
+
+
+const SlickSlider = ({ reviews }) => {
+
+  const settings = {
+    navigation:true,
+    // dots: true,
+    infinite: true,
+    speed: 1500,
+    autoplaySpeed: 70000,
+    fadeIn: true,
+    autoplay: true,
+    pauseOnHover: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
+  const reviewsList = reviews[1].reviews;
+
+  return (
+
+        <div className="slider-wrap">
+            <Slider {...settings}>
+              {reviewsList.map((review, i) => (
+                <div className="slide-wrap" key={review.id + 1}>
+                    <img src={quoteIcon} alt="Quote Mark" width="40" />
+                    <h3 className="review-body">{review.description}</h3>
+                    <p className="review-name">{review.name}</p>
+                    <p className="review-title">{review.title}</p>
+                </div>
+              ))}
+            </Slider>
+        </div>
+  );
+}

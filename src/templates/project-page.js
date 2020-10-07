@@ -1,5 +1,7 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby'
+import { Container, Row, Col } from 'react-grid-system'
+import Banner from "../components/banner";
 
 
 const ProjectPage = ({ props }) => {
@@ -7,32 +9,33 @@ const ProjectPage = ({ props }) => {
     console.log(props);
 
     return (
-      <>
-        <h1>{props.pageContext.slug}</h1>
-        <h2>{props.pageContext.description}</h2>
-        
-        <ul>
-          <h3>Skills</h3>
-          {props.pageContext.skills.map( item => {
-            return <li>{item}</li>
-          })}
+   
+      <Container>
 
-        </ul>
-        <ul>
-          <h3>Requirements</h3>
-          {props.pageContext.tasks.map( item => {
-            return <li>{item}</li>
-          })}
-        </ul>
+          <Banner title={props.pageContext.title}/>
+         
+          <h2>{props.pageContext.description}</h2>
+          
+          <ul>
+            <h3>Skills</h3>
+            {props.pageContext.skills.map( item => {
+              return <li>{item}</li>
+            })}
 
-        <a href={props.pageContext.modalURL} style={{'display': 'block'}}><button>Visit Site!</button></a>
+          </ul>
+          <ul>
+            <h3>Requirements</h3>
+            {props.pageContext.tasks.map( item => {
+              return <li>{item}</li>
+            })}
+          </ul>
 
-        <img src={props.pageContext.image} />
+          <a href={props.pageContext.modalURL} style={{'display': 'block'}}><button>Visit Site!</button></a>
+
+          <img src={props.pageContext.image} />
+      </Container>
        
-      </>
-    )
-
-    
+    ) 
 }
 
 

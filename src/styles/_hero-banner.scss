@@ -13,60 +13,31 @@
       margin-bottom: 60px;
       min-height: 280px;
     }
-  
-    .animated-bg {
-      background-image: url('../images/hero-code-home.jpg');
-      background-repeat: repeat;
-      background-size: cover;
-      min-height: 15vh;
-      width: 3000px;
-      z-index: -1;
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-    
-    //   animation-name: MOVE-BG;
-    //   animation-duration: 600s;
-    //   animation-timing-function: linear;
-    //   animation-iteration-count: infinite;
-    
-    //   @keyframes MOVE-BG {
-    //     from {
-    //       transform: translateX(0);
-    //     }
-    //     50% { 
-    //       transform: translateX(-50%);
-    //     }
-    //     100% {
-    //       transform: translateX(187%);
-    //     }
-    //  }
-    
-    } 
   }
 
   .intro-text-container {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    min-height: 15vh;
-    position: fixed;
+    margin-left: 0;
   
     h1 {
-      color: black;
+      background: rgb(1,162,247);
+      background: -webkit-linear-gradient(rgba(1,162,247,1), rgba(125,247,182,1));
       font-size: 60px;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
       // margin-top: auto;
      
   
       @media screen and (min-width: 768px) {
-        font-size: 130px;
+        font-size: 90px;
         text-align: left;
       }
   
       @media screen and (min-width: 1600px) {
-        font-size: 160px;
+        font-size: 100px;
+        text-align: left;
       }
     
     }
