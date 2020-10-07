@@ -4,9 +4,9 @@ import { Container } from 'react-grid-system';
 
 const Banner = ({ title }) => (
 
-  <div className="hero-wrap">
-    <div className="animated-bg"></div>
-    <div className="gradient-overlay"></div>
+  <div className="">
+    <div className=""></div>
+    <div className=""></div>
     <Container className="intro-text-container">
       <Typing speed={60} delay={200} hideCursor={true}>
         <span><h1>{title}</h1></span>

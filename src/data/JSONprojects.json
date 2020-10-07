@@ -3,6 +3,7 @@
   "projects": [
       {
         "id": 0,
+        "slug":"the-eventa-group",
         "title": "The Eventa Group",
         "description": "Brochure site development with Gatsby JS and Contentful Headless CMS.",
         "modalURL": "http://www.theeventagroup.com/",
@@ -26,6 +27,7 @@
       },
       {
         "id": 1,
+        "slug":"fresh-food",
         "title": "Fresh Food for Now",
         "description": "Web development for a recognized food brand in the UK that needed to create market awareness of their new delivery system and products.",
         "modalURL": "https://www.foodfornow.co.uk/",
@@ -48,6 +50,7 @@
       },
       {
         "id": 2,
+        "slug":"cb-savigns",
         "title": "Close Brothers Savings",
         "description": "Front-end development for an online banking company to help them improve their online presence and to inform of the main products. Everything was translated from a sketch design. The website's build with reusable web components that also are editable for the final user. ",
         "modalURL": "https://www.closesavings.co.uk/",
@@ -70,6 +73,7 @@
       },
       {
         "id": 3,
+        "slug":"novitas-loans",
         "title": "Novitas Loans",
         "description": "Web site built for a recognized loans provider in the UK. ",
         "modalURL": "https://www.novitasloans.co.uk/",
@@ -91,6 +95,7 @@
       },
       {
         "id": 4,
+        "slug":"kambi-landing-page",
         "title": "Kambi",
         "description": "Landing page built to inform clients about the company's offering. SVG and CSS transitions and animations where applied through the page to keep the user's attention thoroughly.",
         "modalURL": "https://kambi.com/our-offering",

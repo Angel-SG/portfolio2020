@@ -17,7 +17,8 @@ class Layout extends React.Component {
 
   render() {
 
-    const { children, data } = this.props;
+    const { children, data, projects } = this.props;
+  
 
     return (
       <>
@@ -58,9 +59,25 @@ export default props => (
             }
           }
         }
+        allDataJson {
+          nodes {
+            projects {
+              id
+              image {
+                src {
+                  absolutePath
+                }
+              }
+              title
+              tasks
+              skills
+              modalURL
+            }
+          }
+        }
       }
     `}
-    render={({ allSite }) => <Layout data={allSite} {...props} />}
+    render={({ allSite, allDataJson }) => <Layout data={allSite} projects={allDataJson} {...props} />}
   />
 )
 

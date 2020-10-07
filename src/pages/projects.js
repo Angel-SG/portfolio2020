@@ -16,6 +16,7 @@ const ProjectsPage = () => {
   useEffect(() => {
     setAddClass('loaded')
   }, []);
+  
 
   return (
     <Layout>
