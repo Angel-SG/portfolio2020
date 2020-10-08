@@ -49,11 +49,10 @@ const AboutPage = () => {
             </Col>
             <Col sm={12} md={6} lg={8}>
               <div className="about-main-copy">
-                {/* <div className="copy-section">
-                  <h2>About Me</h2>
-                  <p>I'm a self-taught Front-end developer who cares about design, user journey and site optimization. I'm specialized in building responsive, engaging pages that are not only pixel perfect but also are accordingly aligned with WC3 best practices.  In the last few years, I had the opportunity to work with both digital agencies and in-house teams alike.</p>
-                  <p>When I'm not coding or working in some exciting project you can find me in the pub enjoying some beers with my mates, watching tv serials or walking along the sea with my lovely little family.</p>
-                </div> */}
+                <div className="copy-section">
+                  <h2>Open to opportunities</h2>
+                  <p>I'm currently available for freelance and contract work. I'll be happy to discuss your requirements and to provide a cost and time estimates for your project.</p>
+                </div>
                 <div className="copy-section">
                   <h2>Skills & Expertise</h2>
                   <h3>Front-end Development</h3>
@@ -68,6 +67,21 @@ const AboutPage = () => {
                   <p>All developed web pages are completely tested to ensure compatibility with different web browsers including Firefox, Google Chrome, Safari and different versions of Internet Explorer.</p>
                   
                 </div>
+
+                {/* <div className="copy-section">
+                  <h2>Work history</h2>
+                  <h3>The Eventa Group</h3>
+                  <p>I'm specialised in bringing designs and mock-ups to fully functioning web pages by using technologies like HTML, CSS and javaScript. I also have experience coding with React.js and building fast and reliable UI's. When it comes to CMS's I have worked with Drupal and Contentful. </p>
+                  <h3>Responsive Design</h3>
+                  <p>Responsive web designs which will be multi-device compatible to give users high-quality browsing experience and user journey.</p>
+                  <h3>Site optimization</h3>
+                  <p>With the help of tools like Google Lighthouse and GTMetrics, I can have an insight into how websites perform on the web. Then by tacking this information into consideration, I apply the required changes to achieve the best possible performance.</p>
+                  <h3>Marketing</h3>
+                  <p>I have participated in several marketing campaigns by coding both HTML email templates and landing pages. I'm familiar with email services and frameworks like Foundation for emails, Mailchimp, Pure360 and testing tools like EOA or Litmus. </p>
+                  <h3>Cross-browser compatibility </h3>
+                  <p>All developed web pages are completely tested to ensure compatibility with different web browsers including Firefox, Google Chrome, Safari and different versions of Internet Explorer.</p>
+                  
+                </div> */}
             </div>
             </Col>
           </Row>

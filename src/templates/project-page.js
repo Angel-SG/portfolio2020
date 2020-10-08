@@ -1,7 +1,9 @@
 import React from 'react';
-import { StaticQuery, graphql } from 'gatsby'
+import { StaticQuery, graphql, Link } from 'gatsby'
 import { Container, Row, Col } from 'react-grid-system'
 import Banner from "../components/banner";
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 
 const ProjectPage = ({ props }) => {
@@ -9,32 +11,45 @@ const ProjectPage = ({ props }) => {
     console.log(props);
 
     return (
-   
-      <Container>
+      <Layout>
+        <Container className="project-page-container">
 
-          <Banner title={props.pageContext.title}/>
-         
-          <h2>{props.pageContext.description}</h2>
+          <Row>
+            <Col className="">
+              <div className="project-wrap">
+                <Link to="/projects" className="back-button">Back to Projects</Link>
+                <h1>{props.pageContext.title}</h1>
           
-          <ul>
-            <h3>Skills</h3>
-            {props.pageContext.skills.map( item => {
-              return <li>{item}</li>
-            })}
+                <h2>{props.pageContext.description}</h2>
 
-          </ul>
-          <ul>
-            <h3>Requirements</h3>
-            {props.pageContext.tasks.map( item => {
-              return <li>{item}</li>
-            })}
-          </ul>
+                <div className="skills-container">
+                  <ul>
+                    <h3>Technologies</h3>
+                    {props.pageContext.skills.map( item => {
+                      return <li>{item}</li>
+                    })}
 
-          <a href={props.pageContext.modalURL} style={{'display': 'block'}}><button>Visit Site!</button></a>
+                  </ul>
+                  <ul>
+                    <h3>Successfully completed tasks</h3>
+                    {props.pageContext.tasks.map( item => {
+                      return <li>{item}</li>
+                    })}
+                  </ul>
+                </div>
 
-          <img src={props.pageContext.image} />
-      </Container>
-       
+                <div className="project-img-wrap">
+                
+
+                  <img src={props.pageContext.image} />
+
+                  <a className="view-projects" href={props.pageContext.modalURL}>Visit Site!</a>
+                </div>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </Layout>
     ) 
 }
 

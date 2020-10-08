@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import { Container } from 'react-grid-system'
-import Logo from '../images/web-logo.svg'
+import Logo from '../images/logo-color.svg'
 
 const Header = ({ siteTitle, menuLinks }) => (
   <header>

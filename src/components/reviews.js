@@ -19,7 +19,7 @@ const Reviews = ({ reviews }) => {
             <p>Don't hesitate to get in touch if you have an idea in mind, a project that needs some help or simply some bugs to fix. I'm currently available for freelance and contact work.</p>
              <div>
                 <Link to="/projects" className="view-projects">View my Work</Link>
-                <Link to="/about" className="view-projects">More about me</Link>
+                <Link to="/contact" className="view-projects">Get in touch</Link>
               </div>
         </div>
     )
@@ -59,24 +59,7 @@ const SlickSlider = ({ reviews }) => {
     pauseOnHover: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1000,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
+
   };
 
   const reviewsList = reviews[1].reviews;

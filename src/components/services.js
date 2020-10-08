@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'gatsby';
 import { Container, Row, Col } from 'react-grid-system';
 import developmentImg from '../images/icons/web-programming.svg';
 import cmsImg from '../images/icons/database.svg';
@@ -20,10 +21,10 @@ const Services = () => {
                         </div>
                     </Col>
                         
-                    <Col md={6}>
+                    <Col md={6} sm={12}>
                         <div className="service-wrap">
                             <img src={cmsImg} alt="Web Development" width="100"/>
-                            <h2>Gatsby static sites with Headless CMS</h2>
+                            <h2>Gatsby sites with Headless CMS</h2>
                         </div>
                     </Col>
                     <Col md={6}>
@@ -44,6 +45,7 @@ const Services = () => {
                             <h2>Cross-browser compatibility</h2>
                         </div>
                     </Col>
+                  
                 </Row>
                
             </Container>

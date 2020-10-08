@@ -12,7 +12,7 @@ const ProjectsList = ({ props, projects }) => {
         <Row>
           {projects.map(item =>(
       
-            <Col md={4} key={item.id}>
+            <Col md={6} key={item.id}>
               <div className="project-card">
                 <Link to={`/projects/${item.slug}`} className="project-img-wrap">
                   <img src={item.image.src.publicURL} alt="projectss" />

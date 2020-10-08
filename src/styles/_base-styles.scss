@@ -35,9 +35,7 @@ body {
   min-height: 100vh;
   height: 100vh;
   background-color: ghostwhite;
-  background: url(../images/texture-5-ghost.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  
   
 }
 
@@ -55,6 +53,10 @@ p {
   display: flex;
   flex-direction: column;
   align-items: stretch;
+  background: url(../images/texture-5-ghost.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -5px -5px;
 
   @media screen and (min-width: 768px) {
     min-height: calc(100vh - 53.5px);
@@ -178,6 +180,14 @@ h2 {
   + p:last-of-type {
     margin-bottom: 60px;
   }
+}
+
+h3 {
+  color: grey;
+}
+
+p {
+  color: grey;
 }
 
 
