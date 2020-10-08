@@ -5,10 +5,14 @@
   }
 
   form {
-    border: 2px solid lightgray;
+    -webkit-box-shadow: 0px 0px 45px -4px rgba(232,229,232,0.97);
+    -moz-box-shadow: 0px 0px 45px -4px rgba(232,229,232,0.97);
+    box-shadow: 0px 0px 45px -4px rgba(232,229,232,0.97);
     padding: 20px;
     background: ghostwhite;
-    margin: 30px 0;
+    margin: 40px 0 60px 0;
+    border-radius: 5px;
+    
 
     @media screen and (min-width: 768px) {
       padding: 40px;
@@ -20,12 +24,13 @@
     label {
       display: block;
       padding-bottom: 10px;
+      color: grey;
     }
     input,
     textarea {
       width: 100%;
       border: 0;
-      border-bottom: 2px solid lightgray;
+      border-bottom: 1px solid grey;
       margin-bottom: 40px;
       font-size: 18px;
       background-color: ghostwhite;
@@ -34,7 +39,7 @@
       appearance: none;
 
       &:focus {
-        border-bottom: 2px solid #16AD11;
+        border-bottom: 2px solid #28B3EA;
         outline: transparent;
       }
     }
