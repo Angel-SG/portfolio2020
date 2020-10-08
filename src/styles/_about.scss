@@ -36,6 +36,7 @@
     
     p {
       text-align: center;
+      font-weight: 600;
 
      i {
        padding-right: 10px;
@@ -57,7 +58,7 @@
           i {
             text-align: center;
             font-size: 30px;
-            color: rgba(125,247,182,1);
+            color: #28B3EA;
             transition: 0.3s;
 
             &:hover {
@@ -102,23 +103,3 @@
     }
   }
 }
-
-// .about-column {
-//   max-width: 100% !important;
-//   flex: 0 0 100% !important;
-
-//   @media screen and (min-width: 992px) {
-//     max-width: 33.3333% !important;
-//     flex: 0 0 33.3333% !important;
-//   }
-// }
-
-// .about-column-8 {
-//   max-width: 100% !important;
-//   flex: 0 0 100% !important;
-
-//   @media screen and (min-width: 992px) {
-//     flex: 0 0 66.6667% !important;
-//     max-width: 66.6667 !important;
-//   }
-// }
