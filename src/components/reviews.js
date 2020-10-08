@@ -1,27 +1,24 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-grid-system';
+import { Container } from 'react-grid-system';
 import { StaticQuery, graphql, Link } from 'gatsby';
 
 import Slider from 'react-slick';
 import quoteIcon from '../images/icons/left-quotes-sign.svg'
-import quoteIconReverse from '../images/icons/left-quotes-sign-reverse.svg'
-
-
 
 
 const Reviews = ({ reviews }) => {
 
     return(
-        <div className="reviews-wrap">
-            <h1>What my clients say</h1>
+        <Container className="reviews-wrap">
+            <h1>LinkedIn recommendations</h1>
             <SlickSlider reviews={reviews}/>
             <h1>Communication is the key in every successful project.</h1>
-            <p>Don't hesitate to get in touch if you have an idea in mind, a project that needs some help or simply some bugs to fix. I'm currently available for freelance and contact work.</p>
+            <p>Don't hesitate to get in touch if you have an idea in mind, a project that needs some help or simply some bugs to fix. I'm currently available for freelance, contract work, or full-time permament position.</p>
              <div>
                 <Link to="/projects" className="view-projects">View my Work</Link>
                 <Link to="/contact" className="view-projects">Get in touch</Link>
               </div>
-        </div>
+        </Container>
     )
 }
 

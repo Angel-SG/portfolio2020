@@ -6,7 +6,7 @@ const Banner = ({ title }) => (
     <div>
         <Container className="intro-text-container">
           <Typing speed={60} delay={200} hideCursor={true}>
-            <span><h1 style={{'text-align': 'left'}}>{title}</h1></span>
+            <span><h1 style={{'textAlign': 'left'}}>{title}</h1></span>
           </Typing>
         </Container>
     </div>

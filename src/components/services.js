@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link} from 'gatsby';
 import { Container, Row, Col } from 'react-grid-system';
 import developmentImg from '../images/icons/web-programming.svg';
 import cmsImg from '../images/icons/database.svg';

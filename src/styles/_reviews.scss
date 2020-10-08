@@ -9,7 +9,13 @@
         }
 
         .slide-wrap {
-            margin-bottom: 80px;
+            margin-bottom: 40px;
+
+            @media screen and (min-width: 768px) {
+                margin-bottom: 80px;
+            }
+
+
             > img {
                 margin: 0 auto;
             }
@@ -17,11 +23,15 @@
             .review-body {
                 font-style: italic;
                 margin-bottom: 30px;
-                padding: 10px 30px 30px 30px;
+                padding: 10px 15px 30px 15px;
                 margin-top: 0;
                 position: relative;
                 text-align: center;
                 color: grey;
+
+                @media screen and (min-width: 768px) {
+                    padding: 10px 30px 30px 30px;
+                }
             }
 
             .review-name {

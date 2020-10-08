@@ -1,7 +1,6 @@
-import React, { useState } from "react"
+import React from "react"
 import { StaticQuery, graphql, Link } from 'gatsby'
-import { Container, Row, Col } from 'react-grid-system'
-import Modal from 'react-responsive-modal'
+import { Row, Col } from 'react-grid-system'
 
 
 

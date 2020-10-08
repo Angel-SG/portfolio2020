@@ -1,9 +1,8 @@
 import React from 'react';
 import { StaticQuery, graphql, Link } from 'gatsby'
 import { Container, Row, Col } from 'react-grid-system'
-import Banner from "../components/banner";
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+
 
 
 const ProjectPage = ({ props }) => {
@@ -25,15 +24,15 @@ const ProjectPage = ({ props }) => {
                 <div className="skills-container">
                   <ul>
                     <h3>Technologies</h3>
-                    {props.pageContext.skills.map( item => {
-                      return <li>{item}</li>
+                    {props.pageContext.skills.map((item, i) => {
+                      return <li key={`${i}-technologies`}>{item}</li>
                     })}
 
                   </ul>
                   <ul>
                     <h3>Successfully completed tasks</h3>
-                    {props.pageContext.tasks.map( item => {
-                      return <li>{item}</li>
+                    {props.pageContext.tasks.map((item, i) => {
+                      return <li key={`${i}-skills`}>{item}</li>
                     })}
                   </ul>
                 </div>
@@ -41,7 +40,7 @@ const ProjectPage = ({ props }) => {
                 <div className="project-img-wrap">
                 
 
-                  <img src={props.pageContext.image} />
+                  <img src={props.pageContext.image} alt={props.pageContext.title} />
 
                   <a className="view-projects" href={props.pageContext.modalURL}>Visit Site!</a>
                 </div>

@@ -5,7 +5,7 @@
         "id": 0,
         "slug":"the-eventa-group",
         "title": "The Eventa Group",
-        "description": "Brochure site development with Gatsby JS and Contentful Headless CMS.",
+        "description": "Building the Eventa Group site with Gatsby and headless CMS",
         "modalURL": "http://www.theeventagroup.com/",
         "image": 
           {
@@ -52,7 +52,7 @@
         "id": 2,
         "slug":"cb-savigns",
         "title": "Close Brothers Savings",
-        "description": "Front-end development for an online banking company to help them improve their online presence and to inform of the main products. Everything was translated from a sketch design. The website's build with reusable web components that also are editable for the final user. ",
+        "description": "Front-end development for an online banking company to help them improve their online presence and to inform of the main products. The website's build with reusable web components that we created as part of a design system. ",
         "modalURL": "https://www.closesavings.co.uk/",
         "image": 
           {

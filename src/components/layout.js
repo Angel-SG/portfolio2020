@@ -17,7 +17,7 @@ class Layout extends React.Component {
 
   render() {
 
-    const { children, data, projects } = this.props;
+    const { children, data } = this.props;
   
 
     return (
