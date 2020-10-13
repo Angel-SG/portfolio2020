@@ -2,6 +2,28 @@
   {
   "projects": [
       {
+        "id": 6,
+        "slug":"supplier-portal",
+        "title": "The Eventa Group - Suppliers Portal",
+        "description": "Coding the new suppliers portal dashboard with React.js",
+        "modalURL": "http://www.theeventagroup.com/",
+        "image": 
+          {
+            "src":  "../images/project-supplier-portal.jpg"
+          },
+        "tasks": [
+          "Development of the app navigation, layout and re-usable react components",
+          "SCSS styling and animations",
+          "App optimization",
+          "Cross-browser compatibility"
+        ],
+        "skills": [
+          "HTML",
+          "SCSS",
+          "React JS"
+        ]
+      },
+      {
         "id": 0,
         "slug":"the-eventa-group",
         "title": "The Eventa Group",
