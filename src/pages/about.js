@@ -4,7 +4,7 @@ import Banner from "../components/banner";
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import profileImage from "../images/me.jpg"
+import profileImage from "../images/me.jpeg"
 
 import { Container, Row, Col } from 'react-grid-system';
 // import Typing from 'react-typing-animation';
@@ -35,10 +35,8 @@ const AboutPage = () => {
                     <Col md={10}>
                       <p><i className="fas fa-user-circle"></i>Front-end Developer</p>
                       <p><i className="fas fa-map-marker-alt"></i>Brighton, England.</p>
-                      {/* <p><i className="fas fa-share"></i>Social</p> */}
                       <ul>
                         <li><a href="https://github.com/Angel-SG" target="_blank" rel="noopener noreferrer" title="github"><i className="fab fa-github-alt"></i></a></li>
-                        {/* <li><a href="www.google.com" target="_blank" title="codepen"><i className="fab fa-codepen"></i></a></li> */}
                         <li><a href="https://www.linkedin.com/in/angel-sg/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i className="fab fa-linkedin"></i></a></li>
                       </ul>
                       <Link to="/contact" className="view-projects" style={{ display:'block', marginRight: '0' }}>Get in touch!</Link>

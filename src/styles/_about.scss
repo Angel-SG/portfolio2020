@@ -15,23 +15,23 @@
     position: -ms-sticky;
     position: -o-sticky;
     position: sticky;
-    top: 120px;
+    top: 180px;
 
     .profile-image {
       width: 100%;
       height: auto;
       border-radius: 50%;
-      max-width: 100px;
-      min-width: 100px;
+      max-width: 125px;
+      min-width: 125px;
       min-height: 100px;
       background-color: lightgray;
-      margin: -45px auto;
-  
+      margin: -72px auto;
+      border: 4px solid #28B3EA; 
     }
   }
 
   .social-container {
-    margin-top: 40px;
+    margin-top: 72px;
     padding: 20px;
     
     p {
@@ -48,6 +48,7 @@
       display: flex;
       padding: 10px 0px;
       justify-content: center;
+      margin-bottom: 30px;
 
       li {
         list-style: none;

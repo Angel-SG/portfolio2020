@@ -14,7 +14,7 @@ const Reviews = ({ reviews }) => {
             <SlickSlider reviews={reviews}/>
             <h1>Communication is the key in every successful project.</h1>
             <p>Don't hesitate to get in touch if you have an idea in mind, a project that needs some help or simply some bugs to fix. I'm currently available for freelance, contract work, or full-time permament position.</p>
-             <div>
+             <div className="cta-container">
                 <Link to="/projects" className="view-projects">View my Work</Link>
                 <Link to="/contact" className="view-projects">Get in touch</Link>
               </div>
