@@ -1,4 +1,4 @@
-import React, {useEffect, useState, useRef} from "react";
+import React, {useEffect} from "react";
 import { Link } from "gatsby";
 import Banner from "../components/banner";
 
@@ -8,14 +8,13 @@ import SEO from "../components/seo";
 import { Container, Row, Col } from 'react-grid-system';
 import ProjectsList from '../components/projectsList';
 
-const ProjectsPage = () => {
-
-  const [addClass, setAddClass] = useState(''); 
-  const mainDiv = useRef();
+const ProjectsPage = (props) => {
 
   useEffect(() => {
-    setAddClass('loaded')
+    window.pageExitTime = 1000
   }, []);
+
+  // console.log(props);
   
 
   return (
@@ -24,11 +23,11 @@ const ProjectsPage = () => {
 
       <Banner title="Projects"/>
       
-      <Container className={`home-main-wrap content-container ${addClass}`} ref={mainDiv}>
+      <Container className={`home-main-wrap content-container ${props.status}`}>
         <Row>
           <Col md={12} sm={12}>
             {/* <p>Below you can find examples of some of the projects that I've contributed as a Front-end Developer:</p> */}
-            <ProjectsList/>
+            <ProjectsList props={props}/>
           </Col>
         </Row>
       </Container>

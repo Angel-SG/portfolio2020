@@ -7,15 +7,13 @@ import Layout from "../components/layout"
 
 const ProjectPage = ({ props }) => {
 
-    console.log(props);
-
     return (
       <Layout>
         <Container className="project-page-container">
 
           <Row>
             <Col className="">
-              <div className="project-wrap">
+              <div className={`project-wrap ${props.status}`}>
                 <Link to="/projects" className="back-button">Back to Projects</Link>
                 <h1>{props.pageContext.title}</h1>
           
@@ -37,7 +35,7 @@ const ProjectPage = ({ props }) => {
                   </ul>
                 </div>
 
-                <div className="project-img-wrap">
+                <div className={`project-page-img-wrap ${props.status}`}>
                 
 
                   <img src={props.pageContext.image} alt={props.pageContext.title} />
