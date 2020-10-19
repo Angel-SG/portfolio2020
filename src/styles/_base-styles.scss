@@ -72,9 +72,12 @@ header, main, footer {
 }
 
 header {
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
   position: sticky;
   top: 0;
-  background: white;
   border-bottom: 1px solid lightgray;
   z-index: 10;
   background-color: ghostwhite;
