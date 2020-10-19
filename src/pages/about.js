@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useState, useRef} from "react";
 import { Link } from "gatsby"
 import Banner from "../components/banner";
 
@@ -9,10 +9,13 @@ import profileImage from "../images/me.jpeg"
 import { Container, Row, Col } from 'react-grid-system';
 // import Typing from 'react-typing-animation';
 
-const AboutPage = (props) => {
+const AboutPage = () => {
+
+  const [addClass, setAddClass] = useState(''); 
+  const mainDiv = useRef();
 
   useEffect(() => {
-    window.pageExitTime = 1000
+    setAddClass('loaded')
   }, []);
 
 
@@ -22,7 +25,7 @@ const AboutPage = (props) => {
 
         <Banner title="About" />
 
-        <Container className={`about-wrap content-container ${props.status}`}>
+        <Container className={`about-wrap content-container ${addClass}`} ref={mainDiv}>
           <Row>
             <Col sm={12} md={6} lg={4}>
               <div className="profile-wrap">

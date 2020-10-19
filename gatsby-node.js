@@ -31,7 +31,13 @@ exports.createPages = async ({ graphql, actions }) => {
 
     const projectsArray = result.data.dataJson.projects;
 
-    // console.log(projectsArray);
+    console.log(projectsArray);
+
+    // projectsArray.forEach(({item}) =>{
+    //     console.log(item);
+    // })
+
+   
 
     const path = require('path')
 

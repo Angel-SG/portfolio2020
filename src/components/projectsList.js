@@ -4,7 +4,7 @@ import { Row, Col } from 'react-grid-system'
 
 
 
-const ProjectsList = ({ projects }) => {
+const ProjectsList = ({ props, projects }) => {
    
     return(
       <div>
