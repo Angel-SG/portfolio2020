@@ -32,7 +32,7 @@ const IndexPage = () => {
           
           <Row align="stretch" style={{ height: '100%' }}>
             <Col md={12} sm={12}>
-              <h2>I'm Angel, a passionate Front-end Developer who can interpret customer requirements, provide solutions, and get things done. </h2>
+              <h2>I'm Angel Sanchez, a Front-end Web Developer.</h2>
               <h3>With over four years of experience within the industry, I participated in a wide range of web projects where I had the opportunity to learn, share, improve, and most importantly, deliver an excellent user experience that helped companies and teams to achieve their goals.</h3>
             </Col>
           </Row>
