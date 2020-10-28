@@ -1,5 +1,12 @@
 .services-wrap {
+    padding-top: 40px;
+    padding-bottom: 30px;
 
+    @media screen and (min-width: 576px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+   
     .service-wrap {
         padding: 30px 0;
     }

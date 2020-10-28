@@ -27,7 +27,6 @@ const ProjectsPage = () => {
       <Container className={`home-main-wrap content-container ${addClass}`} ref={mainDiv}>
         <Row>
           <Col md={12} sm={12}>
-            {/* <p>Below you can find examples of some of the projects that I've contributed as a Front-end Developer:</p> */}
             <ProjectsList/>
           </Col>
         </Row>

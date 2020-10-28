@@ -1,48 +1,70 @@
 import React, { useRef, useEffect, useState } from "react";
-import Banner from "../components/banner";
 import Layout from "../components/layout";
 import Services from "../components/services";
 import SEO from "../components/seo";
-import { Container, Row, Col } from 'react-grid-system';
+import { Container } from 'react-grid-system';
 
 import '../styles/app.scss'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import Reviews from "../components/reviews";
+import video from "../images/Web-test-presentation-hd.mp4"
+
+import { Player, ControlBar } from 'video-react';
+import 'video-react/dist/video-react.css'; // import css
 
 
 const IndexPage = () => {
 
-  const mainDiv = useRef();
+  const ref = useRef(null);
+  const services = useRef();
 
   const [addClass, setAddClass] = useState(''); 
+  const [videoState, setVideoState] = useState(null);
+  const [hasEnded, setHasEnded] = useState(false);
 
   useEffect(() => {
     setAddClass('loaded')
   }, []);
 
+  // Scroll into next section on VideoEnd 
+  const onVideoEnd = () => {
+    services.current.scrollIntoView({behavior: "smooth", top: -40});
+  }
+
+  useEffect(() => {
+    ref.current.subscribeToStateChange(setVideoState);
+  }, [setVideoState]);
+
+  useEffect(() => {
+    if (videoState && videoState.ended && !hasEnded) {
+      // Preventing onVideoEnd from being called multiple times
+      setHasEnded(true);
+      onVideoEnd();
+    }
+  }, [videoState, hasEnded, setHasEnded]);
+
   
   return (
-    <div className="services-wrap">
+    <div>
       <Layout>
         <SEO title="Angel Sanchez | Front-end Developer"/>
-        <Banner title="Hello!"/>
-        <Container className={`home-main-wrap content-container ${addClass}`} ref={mainDiv}>
-          
-          <Row align="stretch" style={{ height: '100%' }}>
-            <Col md={12} sm={12}>
-              <h2>I'm Angel Sanchez, a Front-end Web Developer.</h2>
-              <h3>With over four years of experience within the industry, I participated in a wide range of web projects where I had the opportunity to learn, share, improve, and most importantly, deliver an excellent user experience that helped companies and teams to achieve their goals.</h3>
-            </Col>
-          </Row>
+       
+        <div className={`video-wrap ${addClass}`}>
+           <Player fluid={false} preload={'auto'} autoPlay muted ref={ref}> 
+             <source src={video} />
+             <ControlBar disableCompletely/>
+           </Player>
+         </div>
+
+        <Container className={`content-container ${addClass}`}>
+          <div ref={services}>
+            <Services  />
+          </div>
         </Container>
 
-        <Container className={`content-container ${addClass}`} ref={mainDiv} >
-          <Services />
-        </Container>
-
-        <Container className={`content-container ${addClass}`} ref={mainDiv} >
+        <Container className={`content-container ${addClass}`}>
           <Reviews />
         </Container>
 

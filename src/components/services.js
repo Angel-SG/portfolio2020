@@ -9,9 +9,10 @@ import responsiveImg from '../images/icons/internet.svg'
 const Services = () => {
     return(
         <div className="services-wrap">
-            <h1>What do I do</h1>
-
+        
             <Container>
+                <h1>What do I do</h1>
+                <p>With over four years of experience within the industry, I participated in a wide range of web projects where I had the opportunity to learn, share, improve, and most importantly, deliver an excellent user experience that helped companies and teams to achieve their goals.</p>
                 <Row>
                     <Col md={6}>
                         <div className="service-wrap">
