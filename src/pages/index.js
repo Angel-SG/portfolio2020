@@ -52,7 +52,7 @@ const IndexPage = () => {
         <SEO title="Angel Sanchez | Front-end Developer"/>
        
         <div className={`video-wrap ${addClass}`}>
-           <Player fluid={false} preload={'auto'} autoPlay muted ref={ref}> 
+           <Player fluid={false} preload={'auto'} playsInline={true} autoPlay muted ref={ref}> 
              <source src={video} />
              <ControlBar disableCompletely/>
            </Player>
