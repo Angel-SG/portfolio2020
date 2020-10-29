@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 
 
 
-const MobileMenu = ({ siteTitle, menuLinks }) => (
+const MobileMenu = ({ menuLinks }) => (
 	<div>
     <Menu pageWrapId={"header-wrap"}>
 			<div className="nav-wrap">

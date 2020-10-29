@@ -1,4 +1,4 @@
-import React, {useEffect, useState, useRef} from "react";
+import React, {useEffect, useState} from "react";
 import Banner from "../components/banner";
 
 import Layout from "../components/layout"
@@ -9,7 +9,6 @@ import { Container } from 'react-grid-system';
 const ContactPage = () => {
 
   const [addClass, setAddClass] = useState(''); 
-  const mainDiv = useRef();
 
   useEffect(() => {
     setAddClass('loaded')
@@ -22,7 +21,7 @@ const ContactPage = () => {
         <Banner title="Contact" />
 
         <div>
-          <Container className={`form-wrap content-container ${addClass}`} ref={mainDiv}>
+          <Container className={`form-wrap content-container ${addClass}`}>
             <h3>If you have made it this far, I'm sure you have something interesting to tell me! Complete the form below and I'll get back to you in no time.</h3>
             <form name="contact" method="post" action="/success" data-netlify="true" data-netlify-honeypot="bot-field">
               <input type="hidden" name="bot-field" />

@@ -4,7 +4,7 @@ import React from "react"
 import { Container } from 'react-grid-system'
 import Logo from '../images/logo-color.svg'
 
-const Header = ({ siteTitle, menuLinks }) => (
+const Header = ({ menuLinks }) => (
   <header>
     <Container className="header-wrap" id="header-wrap">
       <div className="logo-wrap" style={{ display: "flex"}}>

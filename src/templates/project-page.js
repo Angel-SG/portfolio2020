@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import { StaticQuery, graphql, Link } from 'gatsby'
 import { Container, Row, Col } from 'react-grid-system'
 import Layout from "../components/layout"
@@ -7,15 +7,20 @@ import Layout from "../components/layout"
 
 const ProjectPage = ({ props }) => {
 
-    console.log(props);
+  const [addClass, setAddClass] = useState(''); 
 
-    return (
-      <Layout>
-        <Container className="project-page-container">
+  useEffect(() => {
+    setAddClass('loaded')
+  }, []);
 
-          <Row>
-            <Col className="">
-              <div className="project-wrap">
+  return (
+    <Layout>
+      <Container className="project-page-container">
+
+        <Row>
+          <Col>
+            <div className="project-wrap">
+              <div className={`content-container ${addClass}`}>
                 <Link to="/projects" className="back-button">Back to Projects</Link>
                 <h1>{props.pageContext.title}</h1>
           
@@ -45,11 +50,12 @@ const ProjectPage = ({ props }) => {
                   <a className="view-projects" href={props.pageContext.modalURL}>Visit Site!</a>
                 </div>
               </div>
-            </Col>
-          </Row>
-        </Container>
-      </Layout>
-    ) 
+            </div>
+          </Col>
+        </Row>
+      </Container>
+    </Layout>
+  ) 
 }
 
 

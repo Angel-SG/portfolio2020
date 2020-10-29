@@ -1,4 +1,4 @@
-import React, {useEffect, useState, useRef} from "react";
+import React, {useEffect, useState} from "react";
 import { Link } from "gatsby";
 import Banner from "../components/banner";
 
@@ -11,7 +11,6 @@ import ProjectsList from '../components/projectsList';
 const ProjectsPage = () => {
 
   const [addClass, setAddClass] = useState(''); 
-  const mainDiv = useRef();
 
   useEffect(() => {
     setAddClass('loaded')
@@ -24,7 +23,7 @@ const ProjectsPage = () => {
 
       <Banner title="Projects"/>
       
-      <Container className={`home-main-wrap content-container ${addClass}`} ref={mainDiv}>
+      <Container className={`home-main-wrap content-container ${addClass}`}>
         <Row>
           <Col md={12} sm={12}>
             <ProjectsList/>

@@ -12,7 +12,7 @@ import Reviews from "../components/reviews";
 import video from "../images/Web-test-presentation-hd.mp4"
 
 import { Player, ControlBar } from 'video-react';
-import 'video-react/dist/video-react.css'; // import css
+import 'video-react/dist/video-react.css';
 
 
 const IndexPage = () => {

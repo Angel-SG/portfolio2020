@@ -1,12 +1,5 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
 
 import React from "react"
-import PropTypes from "prop-types"
 import { StaticQuery, graphql } from 'gatsby'
 import MobileMenu from '../components/mobileMenu'
 import Header from "./header"
@@ -19,7 +12,6 @@ class Layout extends React.Component {
 
     const { children, data } = this.props;
   
-
     return (
       <>
   
@@ -39,10 +31,6 @@ class Layout extends React.Component {
   }
 }
 
- 
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
 
 export default props => (
   <StaticQuery

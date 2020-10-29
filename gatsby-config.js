@@ -70,7 +70,13 @@ module.exports = {
         background_color: `#FFFFFF`,
         theme_color: `#FFFFFF`,
         display: `minimal-ui`,
-        icon: `src/images/web-logo.svg`, // This path is relative to the root of the site.
+        icon: `src/images/maskable_icon.png`,
+        icons:[{
+          src: `favicon/maskable_icon.png`, // This path is relative to the root of the site.
+          sizes: `196x196`,
+          type: `image/png`,
+          purpose: `any maskable`
+        }] 
       },
     },
     

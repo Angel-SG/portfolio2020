@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container } from 'react-grid-system';
 import { StaticQuery, graphql, Link } from 'gatsby';
-
 import Slider from 'react-slick';
 import quoteIcon from '../images/icons/left-quotes-sign.svg'
 
@@ -66,9 +65,9 @@ const SlickSlider = ({ reviews }) => {
         <div className="slider-wrap">
             <Slider {...settings}>
               {reviewsList.map((review, i) => (
-                <div className="slide-wrap" key={review.id + 1}>
+                <div className="slide-wrap" key={review.id}>
                     <img src={quoteIcon} alt="Quote Mark" width="40" />
-                    <h3 className="review-body">{review.description}</h3>
+                    <p className="review-body">{review.description}</p>
                     <p className="review-name">{review.name}</p>
                     <p className="review-title">{review.title}</p>
                 </div>

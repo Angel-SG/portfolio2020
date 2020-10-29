@@ -1,4 +1,4 @@
-import React, {useEffect, useState, useRef} from "react";
+import React, {useEffect, useState} from "react";
 import { Link } from "gatsby"
 import Banner from "../components/banner";
 
@@ -12,7 +12,6 @@ import { Container, Row, Col } from 'react-grid-system';
 const AboutPage = () => {
 
   const [addClass, setAddClass] = useState(''); 
-  const mainDiv = useRef();
 
   useEffect(() => {
     setAddClass('loaded')
@@ -25,7 +24,7 @@ const AboutPage = () => {
 
         <Banner title="About" />
 
-        <Container className={`about-wrap content-container ${addClass}`} ref={mainDiv}>
+        <Container className={`about-wrap content-container ${addClass}`}>
           <Row>
             <Col sm={12} md={6} lg={4}>
               <div className="profile-wrap">
