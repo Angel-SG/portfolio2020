@@ -64,7 +64,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
+        name: `Angel Sanchez - Front-end Web Developer.`,
         short_name: `starter`,
         start_url: `/`,
         background_color: `#FFFFFF`,
@@ -74,6 +74,11 @@ module.exports = {
         icons:[{
           src: `favicon/maskable_icon.png`, // This path is relative to the root of the site.
           sizes: `196x196`,
+          type: `image/png`,
+          purpose: `any maskable`
+        }, {
+          src: `favicon/maskable_icon.png`, // This path is relative to the root of the site.
+          sizes: `512x512`,
           type: `image/png`,
           purpose: `any maskable`
         }] 
