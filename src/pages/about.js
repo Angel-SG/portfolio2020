@@ -46,10 +46,10 @@ const AboutPage = () => {
             </Col>
             <Col sm={12} md={6} lg={8}>
               <div className="about-main-copy">
-                <div className="copy-section">
+                {/* <div className="copy-section">
                   <h2>Open to opportunities</h2>
                   <p>I'm currently available for freelance, contract work, or full-time permament position.</p>
-                </div>
+                </div> */}
                 <div className="copy-section">
                   <h2>Skills & Expertise</h2>
                   <h3>Front-end Development</h3>
